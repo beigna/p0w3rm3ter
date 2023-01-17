@@ -1,0 +1,4 @@
+-r testing.txt
+
+ipython==8.8.0
+pytest-watch==4.2.0

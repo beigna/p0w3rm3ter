@@ -1,0 +1,15 @@
+FROM python:3.11-alpine
+
+ENV VIRTUAL_ENV=/usr/venv
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+
+COPY requirements/* ./
+
+RUN apk update && apk upgrade && \
+    apk add --no-cache bash make && \
+    python -m venv $VIRTUAL_ENV &&  \
+    pip install -r local.txt
+
+WORKDIR /usr/app
+
+CMD ["/bin/bash"]
