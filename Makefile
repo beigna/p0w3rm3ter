@@ -22,5 +22,8 @@ docker-shell: ## Launch Docker shell
 docker-pytest-watch: ## Run test on change
 	$(DOCKER_RUN_BASE) /usr/venv/bin/pytest-watch
 
+docker-pytest: ## Run test on change
+	$(DOCKER_RUN_BASE) /usr/venv/bin/pytest
+
 docker-start: ## Start django
 	$(DOCKER_RUN_BASE) bash -c "cd $(APP_NAME) && ./manage.py migrate && ./manage.py runserver"
