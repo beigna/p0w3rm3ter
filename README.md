@@ -18,11 +18,17 @@ Se utilizó DRF para los puntos solicitados, sin mucho que agregar más que el c
 Las URLs son:
 
 `api/v1/devices/` device-list
+
 `api/v1/devices/<pk>/` device-detail
+
 `api/v1/devices/<pk>/avg_consumption/` device-avg-consumption
+
 `api/v1/devices/<pk>/max_consumption/` device-max-consumption
+
 `api/v1/devices/<pk>/min_consumption/` device-min-consumption
+
 `api/v1/devices/<pk>/total_consumption/` device-total-consumption
 
 `api/v1/meterings/` metering-list
+
 `api/v1/meterings/<pk>/` metering-detail
